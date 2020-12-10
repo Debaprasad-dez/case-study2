@@ -73,14 +73,15 @@
       </div>
       </nav>
   </nav>
-<div class="container mt-3">
+<div class="container mt-4">
+  <h3 class=" mx-0 my-0" style="font-weight: 500;">LOGY.AI Auto-ML platform</h3>
 
   <h1 style="font-size: 80px;font-weight: 600;">Case Study</h1>
 </div>
-<div class="container mt-4 py-5 bg-dark ">
+<div class="container mt-1 py-5  ">
 <div class="row">
   <div class="col-3">
-    <div class="bg-primary text-center mx-4 rounded" id="step1">
+    <div class="bg-primary text-center mx-4 rounded floating" id="step1" style="border-radius: 50px !important;">
       <h3 class="py-5 w-75 mx-auto text-white" style="font-weight: 700;">Collect samples</h3>
       <div ></div>
     </div>
@@ -89,13 +90,13 @@
     <div style="height: 100px;">
 
     </div>
-    <div class="bg-secondary text-center mx-4 rounded" id="step2">
+    <div class="bg-secondary text-center mx-4 rounded floating" id="step2"  style="border-radius: 50px !important;">
       <h3 class="py-5 w-75 mx-auto text-white" style="font-weight: 700;">Annotate Images</h3>
     </div>
   </div>
   <div class="col-3">
     
-    <div class="bg-default text-center mx-4 rounded"  id="step3">
+    <div class="bg-default text-center mx-4 rounded floating"  id="step3"  style="border-radius: 50px !important;">
       <h3 class="py-5 w-50 mx-auto text-white" style="font-weight: 700;">Build AI Model</h3>
     </div>
   </div>
@@ -103,23 +104,23 @@
     <div style="height: 100px;">
 
     </div>
-    <div class="bg-info text-center mx-4 rounded"  id="step4">
+    <div class="bg-info text-center mx-4 rounded floating"  id="step4" style="border-radius: 50px !important;">
       <h3 class="py-5 w-50 mx-auto text-white" style="font-weight: 700;">Deploy the AI</h3>
     </div>
   </div>
 </div>
 </div>
-<div class="container mt-0 px-0 mb-0">
 
-  <h1 class="bg-default text-white px-4 py-2 mx-0 my-0" style="font-weight: 500;">LOGY.AI Auto-ML platform</h1>
-</div>
-<div class="container mt-0 mb-5">
+<div class="container mt-1 mb-5">
   <div class="row mt-0">
 
-    <div class="col-6 text-center " style="background: #0d5761;">
-      <img class="w-75 mx-auto  p-5" src="/nivedita.png" alt="">
+    <div class="col-6 text-center mx-0" style="">
+      <div class="shadow">
+
+        <img class="w-75 mx-auto bg-white p-5 " src="/nivedita.png" alt="">
+      </div>
     </div>
-    <div class="col-6 px-5 pt-5 bg-dark text-white">
+    <div class="col-6 px-5 pt-5 bg-dark text-white mx-0">
       <h1>
         <strong>
 
@@ -130,11 +131,36 @@
     </div>
   </div>
 </div>
-
+<div class="container">
+  <div class="row">
+    <div class="col-6"></div>
+    <div class="col-6 p-5">
+      <h1 style="font-weight: 700;">Got an Idea like Dr. Nivedita ?</h1>
+      <h3 class="my-5">
+        Let's turn it into reality with Logy.AI Auto ML Platform!
+      </h3>
+      <h2><strong>What are you waiting for?</strong></h2>
+    </div>
+  </div>
+</div>
     
 
 
+<style>
+  .floating {  
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    
+}
 
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 10px); }
+    to   { transform: translate(0, -0px); }    
+}
+</style>
 
     
 
@@ -145,7 +171,7 @@
     document.getElementById('step2'),{
         startPlug: 'square',
         endPlug: 'square',
-        path: 'grid',
+        path: 'magnet',
     }
 );
 </script>
@@ -155,7 +181,7 @@
     document.getElementById('step3'),{
         startPlug: 'square',
         endPlug: 'square',
-        path: 'grid',
+        path: 'magnet',
     }
 );
 </script>
@@ -165,7 +191,7 @@
     document.getElementById('step4'),{
         startPlug: 'square',
         endPlug: 'square',
-        path: 'grid',
+        path: 'magnet',
     }
 );
 </script>
